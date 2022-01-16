@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'CNAME'
+      - 'package-lock.json'
+      - 'yarn.lock'
 
 jobs:
   build:
